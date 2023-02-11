@@ -8,4 +8,9 @@ class TextConstants {
   static const String SPLASH_ROUTE = "/splashScreen";
   static const String ADD_GRID_ROUTE = "/addGrid";
 
+
+  // Add Grid Screen
+  static const String ROW_EMPTY_VAL = "Add Rows";
+  static const String COLUMN_EMPTY_VAL = "Add Column";
+
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:grid_game/constant/methods.dart';
 import 'package:grid_game/constant/size_constant.dart';
+import 'package:grid_game/constant/text_constant.dart';
 
 class AddGridScreen extends StatefulWidget {
   const AddGridScreen({Key? key}) : super(key: key);
@@ -72,6 +73,9 @@ class _AddGridScreenState extends State<AddGridScreen> {
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
                       _formKey.currentState!.save();
+                      row = int.parse(rowController.text);
+                      column = int.parse(columnController.text);
+                      Navigator.pushNamed(context, TextConstants.GRID_SCREEN);
                     }
                   },
                   child: const Center(

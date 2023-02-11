@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grid_game/constant/text_constant.dart';
 import 'package:grid_game/screens/home_screen/add_grid_screen.dart';
+import 'package:grid_game/screens/home_screen/grid_screen.dart';
 import 'package:grid_game/screens/introduction_screen/splash_screen.dart';
 
 void main() {
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       routes: {
         TextConstants.SPLASH_ROUTE: (context) => const SplashScreen(),
         TextConstants.ADD_GRID_ROUTE: (context) => const AddGridScreen(),
+        TextConstants.GRID_SCREEN: (context) => const GridScreen(),
       },
     );
   }

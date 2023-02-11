@@ -7,6 +7,7 @@ class TextConstants {
 // Navigation routes //
   static const String SPLASH_ROUTE = "/splashScreen";
   static const String ADD_GRID_ROUTE = "/addGrid";
+  static const String GRID_SCREEN = "/GridScreen";
 
 
   // Add Grid Screen

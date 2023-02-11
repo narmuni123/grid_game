@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:grid_game/constant/dialog_display.dart';
 import 'package:grid_game/constant/text_constant.dart';
 
 int? row;
@@ -24,9 +23,4 @@ FormFieldValidator columnValidator() {
       return null;
     }
   };
-}
-
-// exit app
-Future<bool> killApp(context) async {
-  return await DialogDisplay.exitApp(context) ?? false;
 }
